@@ -1,2 +1,2 @@
-# bashutils
-Useful Bash scripts
+# Kommet bashutils
+A collection of useful bash scripts.
