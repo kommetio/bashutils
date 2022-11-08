@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+
+        ServerName subdomainname.kommet.io
+
+        ProxyPass / http://localhost:subdomainport/
+        ProxyPassReverse / http://localhost:subdomainport/
+        ProxyPreserveHost On
+
+</VirtualHost>
