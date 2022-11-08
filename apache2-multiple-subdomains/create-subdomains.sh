@@ -1,3 +1,7 @@
+#
+# Copyright 2022, kommet.io
+#
+
 #! /bin/bash
 
 template_file="subdomain-template"
