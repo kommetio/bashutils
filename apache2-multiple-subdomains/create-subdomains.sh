@@ -21,6 +21,7 @@ do
 	
 	# copy the template file replacing domain and port
 	sed "s/subdomainname/$subdomain/g" $template_file > $newfile
+	sed -i "s/subdomainport/$port/g $newfile
 
 done
 
