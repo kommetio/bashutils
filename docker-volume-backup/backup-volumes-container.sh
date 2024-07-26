@@ -1,7 +1,15 @@
 #! /bin/bash
 
 container=$1
-dirname="backup-$container-$(date +"%FT%H%M%z")"
+parentdir=$2
+
+if [ -z "$parentdir" ]; then
+	echo "Parent directory not passed as parameter"
+	exit -1
+fi
+
+
+dirname="$parentdir/backup-$container-$(date +"%FT%H%M%z")"
 
 echo "Creating folder $dirname"
 
@@ -28,5 +36,3 @@ for i in $(seq $volume_count); do
     tar -zcvf "$volume_name.tar" $volume_path
 
 done
-
-
