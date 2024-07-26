@@ -5,9 +5,9 @@ This script creates a *.tar archive for each volume mounted to a specific Docker
 In order to quickly back up all volumes of your container:
 
 * Install `jq` on your system
-* Run `./backup-volumes-container.sh <container-name>`
+* Run `./backup-volumes-container.sh <container-name> <target-dir>`
 
-As a result, a directory will be created at in your current working folder with the name `backup-<container name>-<current date>`.
+As a result, a directory will be created in the specified target directory with the name `backup-<container name>-<current date>`.
 In that newly created directory there will be one tar archive for each volume mounted to the specified container. The name of the archive will be `<volume-name>.tar`
 
 ### Kommet platform
